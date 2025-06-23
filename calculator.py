@@ -14,11 +14,22 @@ elif operator == "/":
     print( result + str(num1 / num2))
   else:
     print("You can't divide with zero")
+
+
+
 elif operator == "**":
   print( result + str(num1 ** num2))
+
+
 elif operator == "//":
-  print( result + str(num1 // num2))
+  if num2 != 0:
+    print( result + str(num1 // num2))
+  else:
+    print("Valid second number")
+
+
 elif operator == "%":
-  print( result + str(num1 % num2))
-else:
-  print("Invalid input")
+  if num2 != 0:
+    print( result + str(num1 % num2))
+  else:
+    print("Valid second number")
