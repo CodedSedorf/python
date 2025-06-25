@@ -22,12 +22,12 @@ def mulMe(num1, num2):
 def powerMe(num1, num2):
   newValue = num1 ** num2
   return newValue
-#
+
 
 
 firstNum = float(input("Enter first number "))
-secondNum = float(input("Enter second number "))
 operator = input(" Perform basic operation with either +, -, / or * ")
+secondNum = float(input("Enter second number "))
 
 if operator == "+":
   result = addMe(firstNum, secondNum)
@@ -47,3 +47,5 @@ elif operator == "/":
 elif operator == "**":
   newResult = powerMe(firstNum, secondNum)
   print(f"Your final result is {newResult} ")
+else:
+  print("Invalid input")
